@@ -8,11 +8,17 @@ public class Ejercicio1Manager : MonoBehaviour {
 
     public static Ejercicio1Manager Instance { set; get; }
 
-    //private int vidas = 3;
-    //private int monedas = 0;
+    private int legos8 = 12;
+    private int legos4 = 16;
+    private int cantMesas = 0;
+    private int cantSillas = 0;
+    private int ganancias = 0;
     
-    public Text Legos6;
+    public Text Legos8;
     public Text Legos4;
+    public Text CantMesas;
+    public Text CantSillas;
+    public Text Ganancias;
 
     private void Awake()   //private void Start, funciona antes del Start
     {
@@ -26,12 +32,20 @@ public class Ejercicio1Manager : MonoBehaviour {
 		
 	}
 
-
     // Update is called once per frame
     void Update () {
 
-        //MonedasNivel.text = "Monedas adquiridas : " + monedas.ToString();
-        //VidasNivel.text = "Vidas restantes : " + vidas.ToString();
+        Legos8.text = legos8.ToString();
+        Legos4.text = legos4.ToString();
+        CantSillas.text = cantSillas.ToString();
+        CantMesas.text = cantMesas.ToString();
+        Ganancias.text = "$" + ganancias.ToString();
+
+
+        //------Aqui debo verificar que hay cantidades disponibles, sumas y otros
+
+
+
 
         //if (vidas <= 0)
         //{
@@ -48,6 +62,29 @@ public class Ejercicio1Manager : MonoBehaviour {
         //VidasNivel.text = "Vidas restantes : " + vidas.ToString();
 
 
+    }
+
+    public void Silla()
+    {
+        if (legos8 >= 1 && legos4 >= 2)
+        {
+            cantSillas++;
+            legos8 -= 1;
+            legos4 -= 2;
+            ganancias += 3000;
+        }
+    }
+
+
+    public void Mesa()
+    {
+        if (legos8 >= 2 && legos4 >= 2)
+        {
+            cantMesas++;
+            legos8 -= 2;
+            legos4 -= 2;
+            ganancias += 5000;
+        }
     }
 
 

@@ -305,14 +305,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ejercicio1Manager.cs" />
     <Compile Include="Assets\Scripts\MenuPrincipalManager.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\BarraVida.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\CamaraControl.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\Daño.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\EnemigoIA.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\LevelManager.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\MenuManager.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\Pausa.cs" />
-    <Compile Include="Assets\ScriptsEjemplos\PlayerOriginal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
