@@ -25,4 +25,8 @@ public class MenuPrincipalManager : MonoBehaviour {
     void Update () {
 		
 	}
+
+    //Codigo para instancear y ocultar objetos
+    //este arriba:  public GameObject winBox;
+    //winBox.SetActive(false);
 }

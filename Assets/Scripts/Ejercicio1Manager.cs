@@ -20,6 +20,12 @@ public class Ejercicio1Manager : MonoBehaviour {
     public Text CantSillas;
     public Text Ganancias;
 
+    public AudioClip sonidoCrear;
+
+
+    AudioSource fuenteSonidoCrear;
+
+
     private void Awake()   //private void Start, funciona antes del Start
     {
         Instance = this;
@@ -29,8 +35,8 @@ public class Ejercicio1Manager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        fuenteSonidoCrear = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update () {
@@ -72,6 +78,8 @@ public class Ejercicio1Manager : MonoBehaviour {
             legos8 -= 1;
             legos4 -= 2;
             ganancias += 3000;
+            fuenteSonidoCrear.clip = sonidoCrear;
+            fuenteSonidoCrear.Play();
         }
     }
 
@@ -84,6 +92,8 @@ public class Ejercicio1Manager : MonoBehaviour {
             legos8 -= 2;
             legos4 -= 2;
             ganancias += 5000;
+            fuenteSonidoCrear.clip = sonidoCrear;
+            fuenteSonidoCrear.Play();
         }
     }
 
