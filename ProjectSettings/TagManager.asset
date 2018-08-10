@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mesa1
+  - Mesa2
+  - Mesa3
+  - Mesa4
+  - Mesa5
+  - Mesa6
+  - Silla1
+  - Silla2
+  - Silla3
+  - Silla4
+  - Silla5
+  - Silla6
+  - Silla7
+  - Silla8
   layers:
   - Default
   - TransparentFX
